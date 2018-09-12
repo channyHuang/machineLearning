@@ -5,9 +5,8 @@ layer {
   top: "data"
   top: "label"
   hdf5_data_param {
-    #source: "/home/channy/Documents/Code/machineLearning/training.txt"
-	source: "/home/channy/Documents/Code/caffe-regression-master/kaggle_fkp_data/train_data_list.txt"
-    batch_size: 128
+    source: "./training.txt"
+	batch_size: 128
     shuffle: true
   }
   include: { phase: TRAIN }
@@ -18,9 +17,8 @@ layer {
   top: "data"
   top: "label"
   hdf5_data_param {
-    #source: "/home/channy/Documents/Code/machineLearning/verify.txt"
-	source: "/home/channy/Documents/Code/caffe-regression-master/kaggle_fkp_data/val_data_list.txt"
-    batch_size: 540
+    source: "./verify.txt"
+	batch_size: 540
   }
   include: { phase: TEST }
 }

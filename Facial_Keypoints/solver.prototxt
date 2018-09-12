@@ -1,4 +1,4 @@
-net: "/home/channy/Documents/Code/machineLearning/facial_keypoints.prototxt"
+net: "./facial_keypoints.prototxt"
 test_iter: 6
 test_interval: 100
 base_lr: 0.01
@@ -10,5 +10,5 @@ display: 100
 max_iter: 2000
 momentum: 0.9
 snapshot: 1000
-snapshot_prefix: "/home/channy/Documents/Code/machineLearning/tmp"
+snapshot_prefix: "./tmp"
 solver_mode: CPU
