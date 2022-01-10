@@ -1,1 +1,0 @@
-/home/channy/Documents/Code/Facial_Keypoints/training.h5
